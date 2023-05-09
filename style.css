@@ -1,0 +1,53 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  color: whitesmoke;
+}
+
+body {
+  background-color: #0f0f23;
+  color: whitesmoke;
+  font-family: monospace;
+  align-content: center;
+  margin: 0 !important;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+span {
+  color: #a3a2a2;
+}
+
+li {
+  width: fit-content;
+  border-radius: 10px;
+  max-width: 70%;
+  padding: 2%;
+  margin-left: 12.5%;
+}
+
+a {
+  text-decoration: none;
+  color: #a3a2a2;
+}
+
+header {
+  margin-left: 14.5%;
+  margin-top: 2%;
+}
+
+svg {
+  width: 32px;
+  height: 32px;
+}
+
+.links {
+  margin-bottom: 2%;
+  text-align: center;
+}
