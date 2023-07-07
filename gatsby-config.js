@@ -10,8 +10,8 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: 'My New Blog',
-    description: 'This is my awesome blog I made from scratch!'  
+    title: "My New Blog",
+    description: "This is my awesome blog I made from scratch!",
   },
   plugins: [
     {
@@ -28,6 +28,19 @@ module.exports = {
         path: `${__dirname}/src/blog/`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        {
+          resolve: `gatsby-remark-highlight-code`,
+          options: {
+            terminal: "carbon",
+            theme: "blackboard",
+          },
+        },
+      ],
+    },
+    },
   ],
-}
+};

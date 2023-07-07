@@ -1,7 +1,10 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
 
-import "../assets/generalStyle.css";
+import { graphql } from "gatsby";
+
+// import "../assets/generalStyle.css";
+deckDeckGoHighlightElement();
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark;
